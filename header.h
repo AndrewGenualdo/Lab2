@@ -8,6 +8,19 @@ using namespace std;
 const int MAX = 20, SECTIONS = 2, GRADE = 12;
 const string FILENAME = "students.txt";
 const string NEXT_SECTION = "*****";
+
+struct Student {
+    string mID,
+           mName,
+           letterGrade;
+    float mLabGrade,
+          mPasGrade,
+          mQuizGrade,
+          mMidtermGrade,
+          mFinalGrade,
+          mAverageGrade;
+};
+
 void assignGrade(Student data[][SECTIONS], const int size[SECTIONS]);
 void computeAverage(Student data[][SECTIONS], const int size[SECTIONS]);
 void computeAverage(const Student data[][SECTIONS], const int size[SECTIONS],
