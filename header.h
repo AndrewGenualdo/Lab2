@@ -8,6 +8,12 @@ using namespace std;
 const int MAX = 20, SECTIONS = 2, GRADE = 12;
 const string FILENAME = "students.txt";
 const string NEXT_SECTION = "*****";
+const string LETTERS[5] = {"A", "B", "C", "D", "F"};
+const float LAB_PERCENT = 0.15;
+const float PAS_PERCENT = 0.35;
+const float QUIZ_PERCENT = 0.1;
+const float MIDTERM_PERCENT = 0.15;
+const float FINAL_PERCENT = 0.25;
 
 struct Student {
     string mID,
@@ -33,4 +39,6 @@ const double averages[SECTIONS], const int grade[GRADE]
 [SECTIONS]);
 void loadData(Student data[][SECTIONS], int size[SECTIONS]);
 void sortData(Student data[][SECTIONS], const int size[SECTIONS]);
+string letterGrade(double grade);
+
 #endif

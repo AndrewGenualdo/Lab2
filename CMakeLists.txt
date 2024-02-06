@@ -4,4 +4,6 @@ project(Lab2)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Lab2
-        lab2.cpp)
+        lab2.cpp
+        functions.cpp
+)
