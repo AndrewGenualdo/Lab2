@@ -1,3 +1,5 @@
+//No header here since I didn't write this
+
 #include "header.h"
 
 int main()
